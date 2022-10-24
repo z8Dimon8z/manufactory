@@ -1,0 +1,114 @@
+.idea {
+    padding-top: 163px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 250px;
+      width: 126px;
+      background-image: url('../images/idea/idea-decor.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+		&__title {
+      margin-bottom: 70px;
+		}
+
+		&__text {
+      max-width: 309px;
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      transform: translate(196%, -48%);
+		}
+
+		&__slider-inner {
+      margin-left: -375px;
+		}
+
+		&__slider-item {
+      min-height: 220px;
+      min-width: 307px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      position: relative;
+      padding-top: 200px;
+      &:before {
+      content: "";
+      position: absolute;
+      border: 2px solid #DD782F;
+      border-radius: 10px;
+      left: 2%;
+      top: -3%;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+
+
+		&__slider-box {
+      width: 247px;
+      height: 70px;
+      background: linear-gradient(122.61deg, rgba(252, 254, 255, 0.3) 30.49%, rgba(252, 254, 255, 0.1) 74.05%);
+      backdrop-filter: blur(40px);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      position: absolute;
+      bottom: -20px;
+      left: 15px;
+		}
+
+		&__slider-tittle {
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 153px;
+      text-align: center;
+		}
+}
+// подгонка размеров слайда
+.idea__slider-inner .slick-slide{
+  margin-right: 30px; 
+  padding-top: 360px;
+  padding-bottom: 20px;
+}
+
+.idea__slider-inner .slick-track .slick-current .idea__slider-item{
+      min-height: 560px;
+      min-width: 800px;
+    }
+
+.idea__slider-inner .slick-track .slick-current .idea__slider-item .idea__slider-box{
+  display: flex;
+}
+
+.idea__slider-inner .slick-track .slick-current{
+  padding-top: 20px;
+}
+
+// кнопки 
+
+.idea__slider-arrow{
+  width: 69px;
+  height: 59px;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.idea__slider-next{
+  transform: translate(580%, -50%);
+}
+
+.idea__slider-prew{
+  transform: translate(479%, -50%);
+}
